@@ -16,8 +16,8 @@ body {
 .container {
   font-size: 16px;
   background-color: #ffffff;
-  width: 90vw;
-  height: 34em;
+  width: 80vw;
+  height: 600px;
   position: absolute;
   transform: translate(-50%, -50%);
   top: 50%;
@@ -88,13 +88,24 @@ body {
 
 canvas {
   display: block;
+  width: 500px;
+  height: 300px;
   margin: auto;
   border: 8px solid rgb(103, 69, 255);
   border-radius: 16px;
 }
 
-.hide {
+/* .hide {
   display: none;
+} */
+
+#new-game-container {
+  display: flex;
+  justify-content: center;
+}
+
+#result-text {
+  display: block;
 }
 
 #result-text h2 {
@@ -110,15 +121,22 @@ canvas {
 #result-texg span {
   font-weight: 600;
 }
-
-#new-game-button {
+button {
   font-size: 1.25em;
   padding: 0.5em 1em;
-  background-color: blue;
+  background-color: rgb(103, 69, 255);
   border: 3px solid #000000;
   color: #fff;
   border-radius: 0.2em;
   cursor: pointer;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  &:hover {
+    background-color: rgb(212, 202, 255);
+    color: #000000;
+  }
 }
 
 .win-msa {
