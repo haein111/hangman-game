@@ -15,16 +15,25 @@
   </head>
   <body>
     <div class="container">
+      <h1>Hangman</h1>
+      <p>
+        Use the alphabet below to guess the word, or click hint to get a clue
+      </p>
+    </div>
+    <div class="container">
+      <div id="buttons"></div>
       <div id="options-container">option</div>
       <div id="letter-container" class="letter-container hide">letter</div>
       <div id="user-input-section">input</div>
       <div id="mylives"></div>
+      <p id="clue">Clue -</p>
       <canvas id="canvas"></canvas>
-      <div id="new-game-container">
+      <div id="new-game-container" class="new-game-container hide">
         <div id="result-text">result</div>
-        <button id="hint-button">hint</button>
+        <button id="hint">hint</button>
         <button id="new-game-button">new game</button>
       </div>
     </div>
+    <script defer src="./script.js"></script>
   </body>
 </html>

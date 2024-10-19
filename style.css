@@ -86,6 +86,12 @@ body {
   margin: 0.6em 0 1.2em 0;
 }
 
+#clue {
+  display: block;
+  text-align: center;
+  font-size: 20px;
+}
+
 canvas {
   display: block;
   width: 500px;
